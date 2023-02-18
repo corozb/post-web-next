@@ -22,12 +22,14 @@ async function ListOfPost() {
   return (
     <>
       {posts.slice(0, 5).map((post) => (
-        <article key={post.id}>
-          <Link href='/posts/[id]' as={`/posts/${post.id}`}>
-            <h2 style={{ color: '#09f' }}>{post.title}</h2>
-            <p>{post.body}</p>
+        <article key={post.id} className='list'>
+          <>
+            <Link href='/posts/[id]' as={`/posts/${post.id}`}>
+              <h2 style={{ color: '#09f' }}>{post.title}</h2>
+              <p>{post.body}</p>
+            </Link>
             <LikeButton id={post.id} />
-          </Link>
+          </>
         </article>
       ))}
     </>

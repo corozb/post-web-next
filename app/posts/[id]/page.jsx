@@ -1,7 +1,5 @@
-import React from 'react'
-
-function page({ params: { id } }) {
-  return <div>this is a post {id}</div>
+function PostPage() {
+  return null
 }
 
-export default page
+export default PostPage

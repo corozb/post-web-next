@@ -8,9 +8,11 @@
   display: flex;
   list-style: none;
   gap: 32px;
+  padding: 12px 20px;
 }
 
 .navigation a:hover {
   color: #f0f0f0;
   text-decoration: underline;
+  cursor: pointer;
 }
