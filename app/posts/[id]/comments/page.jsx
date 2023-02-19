@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 const fecthComments = async (id) => {
   await new Promise((resolve) => setTimeout(resolve, 5000))
+  throw new Error()
 
   // incremental static regeneration
   return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, {
