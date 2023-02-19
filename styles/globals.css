@@ -79,6 +79,7 @@ p {
 }
 
 h2 {
+  font-family: var(--font-grotesk), sans-serif;
   padding: 25px 0 10px 0;
 }
 

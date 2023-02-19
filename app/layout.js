@@ -1,5 +1,7 @@
-import '../styles/globals.css'
 import Navigation from '../components/Navigation'
+import '../styles/globals.css'
+
+import { space } from './(with-banner)/font'
 
 export default function RootLayout({ children }) {
   return (
@@ -7,7 +9,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>Next midudev</title>
       </head>
-      <body>
+      <body className={space.variable}>
         <Navigation />
         {children}
       </body>
