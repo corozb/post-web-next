@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const fecthComments = async (id) => {
   await new Promise((resolve) => setTimeout(resolve, 5000))
@@ -22,6 +23,12 @@ async function page({ params: { id } }) {
       </Link>
       {comments.map((comment) => (
         <li style={{ background: 'rgb(107 107 107)' }}>
+          <Image
+            width={50}
+            height={50}
+            src={`https://avatars.dicebear.com/api/pixel-art/${comment.email}.svg`}
+            alt={comment.name}
+          />
           <h4>{comment.title}</h4>
           <small>{comment.body}</small>
         </li>
